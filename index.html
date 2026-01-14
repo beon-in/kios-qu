@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk-Qu - Modern Variant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --green-primary: #8EB441;
+            --grey-primary: #A3A899;
+            --dark-text: #333333;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #F4F4F4;
+            /* Header Background Kiosk-Qu */
+            background-image: url('https://bit.ly/KiosQ_Header');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 350px 25px 60px 25px;
+            box-sizing: border-box;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        /* Tombol dengan Efek Depth */
+        .link-card {
+            display: block;
+            width: 100%;
+            padding: 18px 0;
+            margin-bottom: 15px;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+            border-radius: 12px;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-grey { background: linear-gradient(135deg, #A3A899, #8C9184); }
+        .bg-green { background: linear-gradient(135deg, #8EB441, #7A9B37); }
+
+        .link-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .link-card:active {
+            transform: scale(0.98);
+        }
+
+        /* Grid Produk Kiosk-Qu */
+        .product-section {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .product-box {
+            flex: 1;
+        }
+
+        .product-box span {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            margin-bottom: 10px;
+            color: var(--dark-text);
+            text-transform: uppercase;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .product-img:hover {
+            transform: rotate(2deg) scale(1.05);
+        }
+
+        /* Footer Sosmed */
+        .social-footer {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .social-footer a {
+            color: var(--dark-text);
+            font-size: 28px;
+            transition: all 0.3s ease;
+        }
+
+        .social-footer a:hover {
+            color: var(--green-primary);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 400px) {
+            .container { padding-top: 300px; }
+        }
+    </style>
+</head>
+<body>
+<br/><br/><br/>
+    <div class="container">
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <a href="https://berikhtiar.com/id.a52" target="_blank" class="link-card bg-green">Visit Kiosk-Q </a>
+		<a href="https://www.clicx.my.id/" target="_blank" class="link-card bg-grey">K-Link Produk</a>
+
+        <div class="product-section">
+            <div class="product-box">
+                <span>Wardah Kosmetik</span>
+                <a href="https://atid.me/00eoyp002agz" target="_blank"><img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdvm-md6wt45pdhzo30_tn.webp?q=80&w=400" alt="Wardah Kosmetik" class="product-img"></a>
+            </div>
+            <div class="product-box">
+                <span>Alatte Beauty</span>
+                <a href="https://atid.me/00a4e0002agz" target="_blank"><img src="https://down-tx-id.img.susercontent.com/id-11134210-7qul0-lezjxbbq7yqob5.webp?q=80&w=400" alt="Alatte Beauty" class="product-img"></a>
+            </div>
+        </div>
+		
+		<div class="product-section">
+            <div class="product-box">
+                <span>Saviosa Shopee</span>
+                <a href="https://atid.me/00dq7c002agz" target="_blank"><img src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-m04f2gwv7qj092_tn.webp?q=80&w=400" alt="Saviosa Shopee" class="product-img"></a>
+            </div>
+            <div class="product-box">
+                <span>Biodef </span>
+                <a href="https://atid.me/00a4e0002agz" target="_blank"><img src="https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mdu0ob6i1mqg9c_tn.webp?q=80&w=400" alt="Biodef" class="product-img"></a>
+            </div>
+        </div>
+		
+        <a href="https://www.info-123.my.id" target="_blank" class="link-card bg-grey">Artikel Kesehatan</a>
+        <a href="https://oleh-oleh.islamitravel.xyz/" target="_blank" class="link-card bg-green">Paket - Oleh Oleh Haji</a>
+
+        <div class="social-footer">
+            <a href="https://instagram.com/kiosq.online" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/anne.756891/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/adm_blogxyz" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
